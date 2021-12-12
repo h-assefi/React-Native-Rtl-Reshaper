@@ -1,0 +1,26 @@
+{
+  "name": "react-native-rtl-reshaper",
+  "version": "1.0.1",
+  "description": "RTL Language support where RTL language is not supported.",
+  "main": "Rtl-Reshaper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-assefi/React-Native-Rtl-Reshaper.git"
+  },
+  "keywords": [
+    "React-Native",
+    "React",
+    "Native",
+    "RTL",
+    "Language"
+  ],
+  "author": "Hossein Assefi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h-assefi/React-Native-Rtl-Reshaper/issues"
+  },
+  "homepage": "https://github.com/h-assefi/React-Native-Rtl-Reshaper#readme"
+}
