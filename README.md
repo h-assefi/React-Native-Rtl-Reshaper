@@ -4,6 +4,7 @@ By this you could write RTL languages correctly where RTL language is not suppor
 **To all developers who have such problem **
 
 ##Installation
+
 **npm package users**
 > npm i react-native-rtl-reshaper
 
