@@ -3,7 +3,7 @@
 By this you could write RTL languages correctly where RTL language is not supported. 
 **To all developers who have such problem **
 
-##Installation
+## Installation
 
 **npm package users**
 > npm i react-native-rtl-reshaper
@@ -11,7 +11,7 @@ By this you could write RTL languages correctly where RTL language is not suppor
 **yarn package users**
 > yarn add react-native-rtl-reshaper
 
-##Quick Example
+## Quick Example
 ```
 import {convertRtl} from 'react-native-rtl-reshaper';
 
