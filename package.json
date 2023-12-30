@@ -1,6 +1,6 @@
 {
   "name": "react-native-rtl-reshaper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "RTL Language support where RTL language is not supported.",
   "main": "Rtl-Reshaper.js",
   "scripts": {

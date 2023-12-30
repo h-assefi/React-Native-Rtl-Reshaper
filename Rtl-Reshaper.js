@@ -1,5 +1,5 @@
 /**
- * Javascript Arabic Reshaper by Saleh Souzanchi (https://github.com/font-store/persian-reshaper)
+ * Javascript Rtl Reshaper by Hossein Assefi (https://www.npmjs.com/package/react-native-rtl-reshaper)
  * Forked from https://github.com/louy/Javascript-Arabic-Reshaper
  * Based on (https://raw.github.com/Accorpa/Arabic-Converter-From-and-To-Arabic-Presentation-Forms-B/)
  */
@@ -51,9 +51,9 @@ let charsMap = [
     [0x06a9, 0xfb8e, 0xfb90, 0xfb91, 0xfb8f],
   ],
   combCharsMap = [
-    //[ [ 0x0644, 0x0622 ], 0xFEF5, null, null, 0xFEF6 ], /* LAM_ALEF_MADDA */
-    //[ [ 0x0644, 0x0623 ], 0xFEF7, null, null, 0xFEF8 ], /* LAM_ALEF_HAMZA_ABOVE */
-    //[ [ 0x0644, 0x0625 ], 0xFEF9, null, null, 0xFEFA ], /* LAM_ALEF_HAMZA_BELOW */
+    [[0x0644, 0x0622], 0xfef5, null, null, 0xfef6] /* LAM_ALEF_MADDA */,
+    [[0x0644, 0x0623], 0xfef7, null, null, 0xfef8] /* LAM_ALEF_HAMZA_ABOVE */,
+    [[0x0644, 0x0625], 0xfef9, null, null, 0xfefa] /* LAM_ALEF_HAMZA_BELOW */,
     [[0x0644, 0x0627], 0xfefb, null, null, 0xfefc] /* LAM_ALEF */,
   ],
   transChars = [
@@ -122,10 +122,10 @@ function IsTransparent(c) {
   return false;
 }
 
-export const convertRtl = normal => {
+export const convertRtl = (normal) => {
   var crep,
     combcrep,
-    shaped = '';
+    shaped = "";
 
   for (var i = 0; i < normal.length; ++i) {
     var current = normal.charCodeAt(i);
@@ -208,8 +208,8 @@ export const convertRtl = normal => {
 };
 
 // convert from Arabic Presentation Forms B
-export const convertRtlBack = apfb => {
-  var toReturn = '',
+export const convertRtlBack = (apfb) => {
+  var toReturn = "",
     selectedChar;
 
   theLoop: for (var i = 0; i < apfb.length; ++i) {
